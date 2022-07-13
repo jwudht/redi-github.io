@@ -1,1 +1,1 @@
-<meta charset="UTF-8"><body><script>function getParam(name){const regex=new RegExp("[?&]"+name.replace(/[\[\]]/g,"\\$&")+"(=([^&#]*)|&|#|$)"),const res=regex.exec(window.location.href);if(!res)return null;if(!res[2])return'';return decodeURIComponent(res[2].replace(/\+/g," "))} setTimeout(()=>{location.href=getParam("url")},Number(getParam("sec"))*1000);</script>
+<meta charset="UTF-8"><body><script>setTimeout(()=>{location.href=location.search.replace("?url=","")},3e3)</script>
